@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rainbow Translator!</title>
+  <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+  <script src="{{ url_for('static', filename='socketio.js') }}"></script>
+  <script src="{{ url_for('static', filename='mustache.js') }}"></script>
+  <link href="{{ url_for('static', filename='material-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='raleway.css') }}" rel="stylesheet">
+  {% raw %}
+  <script id="template" type="x-tmpl-mustache">
+    {{#colors}}
+      <div class="list-item">
+        <div class="square" style="background-color: {{ rgb }};"></div>
+        <span class="rightspan">{{ color }}</span>
+        <span class="leftspan">{{ rgb }}</span>
+        <i class="material-icons" onclick="deleteItem(this);">close</i>
+      </div>
+    {{/colors}}
+    {{#colors.length}}
+      <div id="bin">
+        <i class="material-icons" onclick="deleteAll();">delete_sweep</i>
+      </div>
+    {{/colors.length}}
+  </script>
+  {% endraw %}
+  <script type="text/javascript" src="{{ url_for('static', filename = 'app.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'main.css') }}"/>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+<div id="c1">
+    <div id="color"></div>
+    <div class="some-box">
+        <p id="message">Color name</p>
+        <i class="material-icons" id="switch">lightbulb_outline</i>
+        <i class="material-icons" id="bookmark">bookmark_border</i>
+    </div>
+</div>
+<div id="c2"></div>
+</body>
+
+</html>
+

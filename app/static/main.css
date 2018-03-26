@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.some-box {
+  display: flex;
+  align-items: center;
+}
+
+.list-item {
+  width: 320px;
+  margin: 5px auto;
+  padding: 5px;
+  display: flex;
+  border-radius: 4px;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.square {
+  width: 2em;
+  height: 2em;
+  border-radius: 155555px;
+}
+
+.rightspan {
+  margin-left: 10px;
+}
+
+.leftspan {
+  margin-right: auto;
+  font-weight: 700;
+}
+
+#c1 {
+  margin: 0 auto 15px;
+  width: 200px;
+}
+
+#c2 {
+  padding-top: 20px;
+  border-top: 1px solid gray;
+}
+
+#color {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 30px auto 5px;
+}
+
+#message {
+  font-weight: 700;
+  margin-right: auto;
+}
+
+#bin {
+  width: 320px;
+  padding: 5px;
+  margin: 5px auto;
+  text-align: right;
+}
+
+.material-icons {
+  cursor: pointer;
+}

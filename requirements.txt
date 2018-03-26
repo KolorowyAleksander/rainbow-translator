@@ -1,0 +1,6 @@
+Flask
+Flask-SocketIO
+adafruit-tcs34725
+flask-sqlalchemy
+Flask-Restless
+eventlet
